@@ -1,0 +1,13 @@
+type Permission {
+    id: Long
+    createdDate: Instant
+    creator: Long
+    updatedDate: Instant
+    updater: Long
+    name: String!
+    role: Role!
+}
+
+input PermissionRequest {
+    name: String
+}

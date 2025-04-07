@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: graphql-security
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/graphql_security
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  graphql:
+    schema:
+      printer:
+        enabled: true
+    graphiql:
+      enabled: true
+
+  security:
+    jwt:
+      secret: 1234567890
+      expiration: 86400000
+      tokenPrefix: 'Bearer '

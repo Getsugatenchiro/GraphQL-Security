@@ -1,0 +1,43 @@
+type User {
+    id: Long
+    createdDate: Instant
+    creator: Long
+    updatedDate: Instant
+    updater: Long
+    username: String!
+    password: String!
+    role: Role!
+}
+
+input LoginRequest {
+    username: String!
+    password: String!
+}
+
+type LoginResponse {
+    token: String!
+}
+
+input RegisterRequest {
+    username: String!
+    password: String!
+    roleId: Long
+}
+
+input UserUpdateRequest {
+    id: Long!
+    username: String!
+    roleId: Long
+}
+
+extend type Mutation {
+    login(loginRequest: LoginRequest!): LoginResponse!
+    register(registerRequest: RegisterRequest!): User!
+    deleteUser(id: Long!): Boolean!
+    updateUser(userUpdateRequest: UserUpdateRequest!): User!
+}
+
+extend type Query {
+    getAllUsers(pageRequest: PageRequest!): [User]
+    getByUser(id: Long!): User!
+}

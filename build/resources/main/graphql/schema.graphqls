@@ -1,0 +1,15 @@
+scalar Instant
+scalar Long
+
+input PageRequest {
+    pageNo: Int!
+    pageSize: Int!
+    sort: String!
+    sortDirection: String!
+}
+
+type Query {
+}
+
+type Mutation {
+}

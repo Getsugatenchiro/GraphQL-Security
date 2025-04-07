@@ -1,0 +1,31 @@
+type Role {
+    id: Long
+    createdDate: Instant
+    creator: Long
+    updatedDate: Instant
+    updater: Long
+    name: String!
+    permissions: [Permission]
+}
+
+input RoleCreateRequest {
+    name: String
+    permissions: [PermissionRequest]
+}
+
+input RoleUpdateRequest {
+    id: Long
+    name: String
+    permissions: [PermissionRequest]
+}
+
+extend type Mutation {
+    deleteRole(id: Long!): Boolean!
+    createRole(roleCreateRequest: RoleCreateRequest!): Role!
+    updateRole(roleUpdateRequest: RoleUpdateRequest!): Role!
+}
+
+extend type Query {
+    getAllRoles(pageRequest: PageRequest!): [Role]
+    getByRole(id: Long!): Role!
+}
