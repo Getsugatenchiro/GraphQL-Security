@@ -1,6 +1,7 @@
 package com.graphql_security.service.impl;
 
 import com.graphql_security.dto.PageRequest;
+import com.graphql_security.dto.PageResponse;
 import com.graphql_security.dto.RoleCreateRequest;
 import com.graphql_security.dto.RoleUpdateRequest;
 import com.graphql_security.entities.Role;
@@ -27,9 +28,16 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public Page<Role> getAll(PageRequest pageRequest) {
+    public PageResponse getAll(PageRequest pageRequest) {
         org.springframework.data.domain.PageRequest pageable = PageableUtil.getPageable(pageRequest);
-        return roleRepository.findAll(pageable);
+        Page<Role> page = roleRepository.findAll(pageable);
+        return new PageResponse(
+                page.getContent(),
+                page.getTotalElements(),
+                page.getTotalPages(),
+                page.getNumber(),
+                page.getNumberOfElements()
+        );
     }
 
     @Override

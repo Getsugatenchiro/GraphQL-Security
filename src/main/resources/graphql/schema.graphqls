@@ -1,7 +1,7 @@
 scalar Instant
 scalar Long
 
-union PageItem = User
+union PageItem = User | Role
 
 type PageResponse {
     list: [PageItem]

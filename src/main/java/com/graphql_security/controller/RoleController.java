@@ -1,12 +1,12 @@
 package com.graphql_security.controller;
 
 import com.graphql_security.dto.PageRequest;
+import com.graphql_security.dto.PageResponse;
 import com.graphql_security.dto.RoleCreateRequest;
 import com.graphql_security.dto.RoleUpdateRequest;
 import com.graphql_security.entities.Role;
 import com.graphql_security.service.RoleService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -21,7 +21,7 @@ public class RoleController {
 
     @QueryMapping
     @PreAuthorize("hasRole('ROLE_ADMIN') || hasAnyAuthority('ROLE.ALL')")
-    public Page<Role> getAllRoles(@Argument PageRequest pageRequest) {
+    public PageResponse getAllRoles(@Argument PageRequest pageRequest) {
         return roleService.getAll(pageRequest);
     }
 

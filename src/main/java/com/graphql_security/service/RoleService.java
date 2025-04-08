@@ -1,14 +1,14 @@
 package com.graphql_security.service;
 
 import com.graphql_security.dto.PageRequest;
+import com.graphql_security.dto.PageResponse;
 import com.graphql_security.dto.RoleCreateRequest;
 import com.graphql_security.dto.RoleUpdateRequest;
 import com.graphql_security.entities.Role;
-import org.springframework.data.domain.Page;
 
 public interface RoleService {
 
-    Page<Role> getAll(PageRequest pageRequest);
+    PageResponse getAll(PageRequest pageRequest);
 
     Role getById(Long id);
 

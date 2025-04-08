@@ -26,6 +26,6 @@ extend type Mutation {
 }
 
 extend type Query {
-    getAllRoles(pageRequest: PageRequest!): [Role]
+    getAllRoles(pageRequest: PageRequest!): PageResponse
     getByRole(id: Long!): Role!
 }
