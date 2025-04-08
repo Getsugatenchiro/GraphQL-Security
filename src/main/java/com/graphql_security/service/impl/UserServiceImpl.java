@@ -1,6 +1,7 @@
 package com.graphql_security.service.impl;
 
 import com.graphql_security.dto.PageRequest;
+import com.graphql_security.dto.PageResponse;
 import com.graphql_security.dto.UserUpdateRequest;
 import com.graphql_security.entities.User;
 import com.graphql_security.mapper.UserMapper;
@@ -34,9 +35,16 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     }
 
     @Override
-    public Page<User> getAll(PageRequest pageRequest) {
+    public PageResponse getAll(PageRequest pageRequest) {
         org.springframework.data.domain.PageRequest pageable = PageableUtil.getPageable(pageRequest);
-        return userRepository.findAll(pageable);
+        Page<User> page = userRepository.findAll(pageable);
+        return new PageResponse(
+                page.getContent(),
+                page.getTotalElements(),
+                page.getTotalPages(),
+                page.getNumber(),
+                page.getNumberOfElements()
+        );
     }
 
     @Override

@@ -1,11 +1,11 @@
 package com.graphql_security.controller;
 
 import com.graphql_security.dto.PageRequest;
+import com.graphql_security.dto.PageResponse;
 import com.graphql_security.dto.UserUpdateRequest;
 import com.graphql_security.entities.User;
 import com.graphql_security.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -20,7 +20,7 @@ public class UserController {
 
     @QueryMapping
     @PreAuthorize("hasRole('ROLE_ADMIN') || hasAnyAuthority('USER.ALL')")
-    public Page<User> getAllUsers(@Argument PageRequest pageRequest) {
+    public PageResponse getAllUsers(@Argument PageRequest pageRequest) {
         return userService.getAll(pageRequest);
     }
 

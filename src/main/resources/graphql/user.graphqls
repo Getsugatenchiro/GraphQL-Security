@@ -38,6 +38,6 @@ extend type Mutation {
 }
 
 extend type Query {
-    getAllUsers(pageRequest: PageRequest!): [User]
+    getAllUsers(pageRequest: PageRequest!): PageResponse
     getByUser(id: Long!): User!
 }

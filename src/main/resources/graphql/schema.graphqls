@@ -1,6 +1,16 @@
 scalar Instant
 scalar Long
 
+union PageItem = User
+
+type PageResponse {
+    list: [PageItem]
+    size: Long
+    totalPageSize: Int
+    currentPageNumber: Int
+    currentPageElements: Int
+}
+
 input PageRequest {
     pageNo: Int!
     pageSize: Int!
